@@ -1,0 +1,7 @@
+# Python packages used by the scanner and execution tools.
+# ibapi (the IBKR TWS API) ships with IBKR's TWS API download, not PyPI:
+# install it from https://interactivebrokers.github.io (tested with 10.43.2).
+pandas
+numpy
+openpyxl   # pandas.read_excel for IBD .xlsx lists
+rich       # end-of-scan terminal view (scan_display.py)

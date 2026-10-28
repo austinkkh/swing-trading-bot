@@ -1,0 +1,27 @@
+# Personal settings: account IDs, ports, paths. Never commit.
+config.py
+config.py.bak
+.env
+*.env
+
+# Market data and outputs (third-party data is licensed for personal use only)
+Data/
+data/
+Scans/
+Logs/
+logs/
+snapshots/
+ibd_*.csv
+*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/

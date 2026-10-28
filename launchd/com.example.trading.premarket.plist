@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.example.trading.premarket</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/opt/swing-trading-bot/run_daily_pipeline.sh</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/opt/swing-trading-bot</string>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>9</integer>
+    <key>Minute</key>
+    <integer>20</integer>
+  </dict>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>TRADING_MODE</key>
+    <string>dry-run</string>
+    <key>TRADING_TWS_PORT</key>
+    <string>7497</string>
+    <key>TRADING_CLIENT_ID</key>
+    <string>11</string>
+    <key>PYTHON</key>
+    <string>/usr/local/bin/python3</string>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/opt/swing-trading-bot/Logs/scheduler/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/opt/swing-trading-bot/Logs/scheduler/launchd.err.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+  <key>KeepAlive</key>
+  <false/>
+</dict>
+</plist>
